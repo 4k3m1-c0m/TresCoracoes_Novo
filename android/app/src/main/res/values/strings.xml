@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tres coracoes</string>
+    <string name="title_activity_main">Tres coracoes</string>
+    <string name="package_name">com.trescoracoes.cafeteira</string>
+    <string name="custom_url_scheme">com.trescoracoes.cafeteira</string>
+</resources>

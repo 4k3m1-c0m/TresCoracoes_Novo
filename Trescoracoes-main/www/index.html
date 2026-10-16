@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café 3 Corações | O Amor Tem Cheiro de Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">3 Corações<span> ♥♥♥</span></div>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 Carrinho (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Juntos por um café incomparável.</h1>
+    <p>Há gerações levando o aroma e o sabor do verdadeiro café brasileiro para a sua mesa.</p>
+  </section>
+
+  
+<main class="products-grid" id="products-grid">
+  <p>Carregando produtos...</p>
+</main>
+
+
+  <!-- SEÇÃO NATIVA PARA TESTES -->
+  <section class="native-features">
+    <h2>Experiência do Apaixonado por Café</h2>
+    <p>Recursos do dispositivo para interagir com os produtos 3 Corações:</p>
+    
+    <div class="native-buttons">
+      <button class="btn-native" onclick="openCamera()">📷 Escanear QR Code do Pacote</button>
+      <button class="btn-native" onclick="getGPSLocation()">📍 Localizar Cafeteria Mais Próxima</button>
+    </div>
+
+    <div id="native-status" class="status-box">Aguardando ação...</div>
+  </section>
+
+  <!-- Modal do Carrinho -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <span class="close-btn" onclick="toggleCart()">&times;</span>
+      <h2>Seu Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <p>Total: <strong>R$ <span id="cart-total">0,00</span></strong></p>
+        <button class="checkout-btn" onclick="checkout()">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
